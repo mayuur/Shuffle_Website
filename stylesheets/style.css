@@ -1,0 +1,125 @@
+html{
+	background: #2228A2 url(../images/background.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+head{
+	display: none;
+}
+body{
+    color: #fff;
+	display: block;	
+	font-family: 'Ubuntu', Helvetica, sans-serif;
+	font-size: 24px;
+	margin: 0;	
+	width: 100%;
+}
+#logo{	
+	display: block;	
+
+}
+h1{
+	text-decoration: none;
+	font-size: 50px;	
+}
+h1 #title{
+	margin: 0;
+}
+input, button{
+	font-family: 'Ubuntu', Helvetica, sans-serif;
+	font-weight: 200;
+}
+header{
+	margin-bottom: 65px;
+}
+#tagline{
+	margin: 0 auto;
+	font-size: 32px;
+	display: block;	
+	position: relative;	
+	font-weight: 300;
+}
+
+#comingSoon{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	color: rgba(255,255,255,0.6);
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 300;
+	font-size: medium;
+}
+#comingSoon span{
+	text-transform: none;
+}
+.textInput{
+	font-size: 18px;
+	width: 150px;
+	padding: 13px 15px;
+	border: none;
+	border-radius: 5px;
+	background: #310b36;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+}
+
+.btn{		
+	background-color: #3fb8e9;	
+	margin-left: 10px;
+	padding: 0;
+	position: relative;
+	width: 180px;
+	height: 48px;
+	font-size: 16px;
+	line-height: 100%;
+	text-shadow:0 1px rgba(0,0,0,0.4);
+	color: #fff;	
+	top: -1;
+	border: none;		
+	cursor: pointer;			
+	color: #fff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;	
+}
+
+#socialmedia{
+	margin: 40px auto;
+	display: block;
+
+}
+#betaSignup{
+	height: 93px;
+}
+
+a{
+	text-decoration: none !important;
+
+}
+
+footer{
+	font-size: 14px;
+	/*margin-bottom: 40px;*/
+	display: block;
+}
+
+#socialmedia img{
+	width: 1.7em;
+
+}
+form{
+	display: inline-block;
+}
+.error, .success {
+	display: block;
+	font-size: 0.7em;
+	padding: 10px;
+	margin: 0 auto;
+	color: rgba(235, 42, 42, 0.85);
+}
+
+.success {
+	color: rgba(132, 255, 132, 0.85)
+}
