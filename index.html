@@ -25,6 +25,7 @@
 
 
     <script type="text/javascript" src="assets/js/modernizr.custom.32033.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -49,6 +50,7 @@
         
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
                 <div class="container">
+					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" frameborder="0"></iframe>
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -63,12 +65,17 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#about">about</a>
+                            <li><a href="http://twitter.com/keep_shuffling" target="_blank">Twitter</a>
                             </li>
-                            <li><a href="#features">features</a>
+                            <li><a href="http://facebook.com/keep.shuffling" target="_blank">Facebook</a>
                             </li>
+                            <li><a href="https://www.dropbox.com/sh/llf1gj4rut0etb7/AAC-7LcORkOH92Q72VfLeAoKa?dl=0" target="_blank">Press Kit</a>
+                            </li>
+                            <li><a href="mailto:contact@shuffleapp.co" target="_blank">Say Hi!</a>
+                                </li>
+
                             <!--<li><a href="#reviews">reviews</a>
-                            </li>-->
+                            </li>
                             <li><a href="#screens">screens</a>
                             </li>
                             <li><a href="#demo">demo</a>
@@ -76,7 +83,7 @@
                             <li><a class="getApp" href="#getApp">get app</a>
                             </li>
                             <li><a href="#support">support</a>
-                            </li>
+                            </li>-->
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -117,31 +124,49 @@
                             <img src="assets/img/freeze/iphone-freeze.png" alt="">
                         </div>
 
-                        <div class="tp-caption large_white_bold sft" data-x="550" data-y="center" data-hoffset="0" data-voffset="-80" data-speed="500" data-start="1200" data-easing="Power4.easeOut">
-                            Oleose
+                        <div class="tp-caption large_white_light sfb" data-x="550" data-y="center" data-hoffset="0" data-voffset="-80" data-speed="500" data-start="1200" data-easing="Power4.easeOut">
+                            Shuffle
                         </div>
                         <div class="tp-caption large_white_light sfr" data-x="770" data-y="center" data-hoffset="0" data-voffset="-80" data-speed="500" data-start="1400" data-easing="Power4.easeOut">
-                            App
                         </div>
-                        <div class="tp-caption large_white_light sfb" data-x="550" data-y="center" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1500" data-easing="Power4.easeOut">
-                            Landing Theme
+                        <div class="tp-caption large_white_light sfb" style = "font-size : 28px !important;" data-x="550" data-y="center" data-hoffset="0" data-voffset="-20" data-speed="1000" data-start="1500" data-easing="Power4.easeOut">
+                            Coming this May on iOS
                         </div>
 
-                        <div class="tp-caption sfb hidden-xs" data-x="550" data-y="center" data-hoffset="0" data-voffset="85" data-speed="1000" data-start="1700" data-easing="Power4.easeOut">
-                            <a href="#about" class="btn btn-primary inverse btn-lg">LEARN MORE</a>
+<div class="tp-caption sfb hidden-xs" data-x="550" data-y="center" data-hoffset="0" data-voffset="35" data-speed="1000" data-start="1700" data-easing="Power4.easeOut">
+    <a href="#getApp" class="btn btn-primary inverse btn-lg">Intro</a>
+</div>
+
+<div class="tp-caption large_white_light sfb" style = "font-size : 23px !important;" data-x="550" data-y="center" data-hoffset="0" data-voffset="140" data-speed="1000" data-start="1900" data-easing="Power4.easeOut">
+    Let me know when it's done!
+</div>
+
+                        <div class="tp-caption sfb hidden-xs" data-x="550" data-y="center" data-hoffset="0" data-voffset="185" data-speed="1000" data-start="2100" data-easing="Power4.easeOut">
+							<form action="https://docs.google.com/forms/d/1ULS1W5V26bI0gtY9aF_xouSN53B3aX8G-Q9K4iJjW7o/formResponse" method="post" id="signup" target="hidden_iframe" class="betaForm">
+                            <input type="email" class="form-control" id="email" name="entry.1516800338" placeholder="Email Address" autocomplete="off" required="required" x-moz-errormessage="This field should not be left blank."/>
                         </div>
-                        <div class="tp-caption sfr hidden-xs" data-x="730" data-y="center" data-hoffset="0" data-voffset="85" data-speed="1500" data-start="1900" data-easing="Power4.easeOut">
-                            <a href="#getApp" class="btn btn-default btn-lg">GET APP</a>
+
+                        <div class="tp-caption sfb hidden-xs" data-x="750" data-y="center" data-hoffset="0" data-voffset="185" data-speed="1000" data-start="2200" data-easing="Power4.easeOut">
+                            <button type="submit" class="btn btn-primary inverse btn-lg">Submit</a>
+							</form>
                         </div>
+
+<div class="tp-caption large_white_light sfb" style = "font-size : 10px !important;" data-x="center" data-y="bottom" data-hoffset="0" data-voffset="-40" data-speed="1000" data-start="2200" data-easing="Power4.easeOut">
+    Copyright @ Shuffle 2015
+</div>
+
+<div class="tp-caption large_white_light sfb" data-x="center" data-y="bottom" data-hoffset="0" data-voffset="10" data-speed="1000" data-start="2200" data-easing="Power4.easeOut">
+    <img src="assets/img/freeze/company_logo.png" alt="" class="logo">
+</div>
 
                     </li>
                     <!-- SLIDE 2 -->
-                    <li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" >
+                    <!--<li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" >
                         <!-- MAIN IMAGE -->
-                        <img src="assets/img/transparent.png"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                    <!--    <img src="assets/img/transparent.png"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
                         <!-- LAYERS -->
                         <!-- LAYER NR. 1 -->
-                        <div class="tp-caption lfb fadeout hidden-xs"
+                    <!--    <div class="tp-caption lfb fadeout hidden-xs"
                             data-x="center"
                             data-y="bottom"
                             data-hoffset="0"
@@ -161,12 +186,12 @@
                     </li>
 
                     <!-- SLIDE 3 -->
-                    <li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" >
+                    <!--<li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" >
                         <!-- MAIN IMAGE -->
-                        <img src="assets/img/transparent.png"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                    <!--    <img src="assets/img/transparent.png"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
                         <!-- LAYERS -->
                         <!-- LAYER NR. 1 -->
-                        <div class="tp-caption customin customout hidden-xs"
+                    <!--    <div class="tp-caption customin customout hidden-xs"
                             data-x="right"
                             data-y="center"
                             data-hoffset="0"
@@ -213,7 +238,7 @@
                         
                         
                     </li>
-                    
+                    -->
                 </ul>
             </div>
         </div>
@@ -226,7 +251,7 @@
 
         
 
-        <section id="about">
+        <!--<section id="about">
             <div class="container">
                 
                 <div class="section-heading scrollpoint sp-effect3">
@@ -464,7 +489,7 @@
                 </div>
             </div>
         </section>
--->
+
         <section id="screens">
             <div class="container">
 
@@ -639,7 +664,7 @@
                 </div>
             </div>
         </footer>
-
+-->
         
 
     </div>
