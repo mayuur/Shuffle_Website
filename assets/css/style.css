@@ -75,12 +75,12 @@ body {
 ::-moz-selection  {
 	color: #fff;
 	text-shadow:none;
-	background:#2B2E31;
+	background:#F94137;
 }
 ::selection {
 	color: #fff;
 	text-shadow:none;
-	background:#2B2E31;
+	background:#F94137;
 }
 *,
 *:after,

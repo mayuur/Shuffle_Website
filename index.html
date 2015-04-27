@@ -52,10 +52,24 @@
 <form action="https://docs.google.com/forms/d/1ULS1W5V26bI0gtY9aF_xouSN53B3aX8G-Q9K4iJjW7o/formResponse" method="post" id="signup" target="hidden_iframe" class="betaForm">
 
                             <!--<form role="form" action="register.php" method="post" enctype="plain">-->
-                                <input type="email" name="entry.1516800338" class="subscribe-input" placeholder="Enter your e-mail address" required>
+                                <input type="email" id="inputemail" name="entry.1516800338" class="subscribe-input" placeholder="Enter your e-mail address" required>
                                     
+                                <button class='btn btn-conf btn-green' type="submit" id="submitButton" onclick="onemailinputblur()">Let me know when it's done</button>
+                                <script type="text/javascript">
                                     
-                                <button class='btn btn-conf btn-green' type="submit">Let me know when it's done</button>
+                                    function onemailinputblur()
+                                    {
+                                        var myvalue=$('#inputemail').val();
+                                        var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+                                        if (testEmail.test(myvalue)) {
+                                            var button = document.getElementById("submitButton");
+                                            button.innerText = "Sure thing!";
+                                            alert('We\'ll get back to you soon!');
+                                        }
+                                        else alert('Please enter a valid email');
+                                    }
+                                
+                                </script>
                                 <br><br>
                             </form>
                             <button class='btn btn-conf btn-green'>Video</button>
